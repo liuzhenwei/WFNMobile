@@ -1,0 +1,131 @@
+.reg-crop-cont {
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+	position: relative;
+	padding: 40px;
+}
+.reg-crop-pic {
+	width: 100%;
+	height: 100%;
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+.reg-crop-pic img {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.reg-crop-top, .reg-crop-right, .reg-crop-bottom, .reg-crop-left {
+	background-color: #c5d1e5;
+	border-radius: 0.25rem;
+	position: absolute;
+	text-align: center;
+}
+.reg-crop-top, .reg-crop-bottom {
+	width: 120px;
+	height: 32px;
+	left: 50%;
+	margin-left: -60px;
+}
+.reg-crop-right, .reg-crop-left {
+	height: 120px;
+	width: 32px;
+	top: 50%;
+	margin-top: -60px;
+}
+.reg-crop-top {
+	top: 0;
+}
+.reg-crop-bottom {
+	bottom: 0;
+}
+.reg-crop-right {
+	right: 0;
+}
+.reg-crop-left {
+	left: 0;
+}
+.reg-crop-arrow {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	font-size: 0;
+}
+.reg-crop-top .reg-crop-arrow, .reg-crop-bottom .reg-crop-arrow {
+	margin: 8px 0;
+}
+.reg-crop-top .reg-crop-arrow {
+	border-width: 0 32px 18px 32px;
+	border-style: dashed dashed solid dashed;
+	border-color: transparent transparent #065276 transparent;
+}
+.reg-crop-bottom .reg-crop-arrow {
+	border-width: 18px 32px 0 32px;
+	border-style: solid dashed dashed dashed;
+	border-color: #065276 transparent transparent transparent;
+}
+.reg-crop-right .reg-crop-arrow, .reg-crop-left .reg-crop-arrow {
+	margin: 31px 0;
+}
+.reg-crop-right .reg-crop-arrow {
+	border-width: 32px 0 32px 18px;
+	border-style: dashed dashed dashed solid;
+	border-color: transparent transparent transparent #065276;
+}
+.reg-crop-left .reg-crop-arrow {
+	border-width: 32px 18px 32px 0;
+	border-style: dashed solid dashed dashed;
+	border-color: transparent #065276 transparent transparent;
+}
+.reg-crop-turn-right, .reg-crop-turn-left, .reg-crop-zoom-s, .reg-crop-zoom-l {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	display: block;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.reg-crop-turn-right {
+	top: 0;
+	right: 0;
+	height: 32px;
+	background-image: url(../images/ico_turn_right.png);
+}
+.reg-crop-turn-left {
+	top: 0;
+	left: 0;
+	height: 32px;
+	background-image: url(../images/ico_turn_left.png);
+}
+.reg-crop-zoom-s {
+	bottom: 0;
+	right: 0;
+	background-image: url(../images/ico_zoom_s.png);
+}
+.reg-crop-zoom-l {
+	bottom: 0;
+	left: 0;
+	background-image: url(../images/ico_zoom_l.png);
+}
+
+button.btn-blue {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	border: 0;
+	height: 30px;
+	line-height: 28px;
+	font-size: 14px;
+	color:#fff;
+	background-color: #125e82;
+	background-image: -webkit-gradient(  linear,  left top,  left bottom,  color-stop(0, #226f92),  color-stop(0.5, #125e82),  color-stop(1, #045073)  );
+}

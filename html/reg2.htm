@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="../common/mobilev5/css/layout.css" />
+<link rel="stylesheet" type="text/css" href="../common/mobilev5/css/style.css" />
+<script type="text/javascript" src="../common/mobilev5/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="../common/mobilev5/js/common.js"></script>
+</head>
+<body>
+<header>
+	<h1 class="logo">Worldfriends.com</h1>
+</header>
+<div class="page">
+	<div class="content">
+		<h3>Complete Your Profile <span class="green">&bull;</span> Step 2 of 2</h3>
+		<form method="post" class="text-center" style="padding:1rem 1rem 1.5rem 1rem;" action="reg21.htm">
+			<div class="reg-upload">
+				<span class="blue">Click to Select</span><input type="file" data-role="file" />
+			</div>
+		</form>
+		<h3>Picture Guidelines</h3>
+		<p class="mg-btm05">1. Your Profile Picture must be a real photo of you.</p>
+		<p class="mg-btm05">2. It must show your face cearly.</p>
+		<p class="mg-btm05">3. See Picture Guidelines for more details.</p>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(function(){
+	$('input[data-role="file"]').on('change', function(){
+		$(this).closest('form').submit();
+	});
+});
+</script>
+</body>
+</html>
